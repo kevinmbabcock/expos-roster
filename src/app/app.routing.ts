@@ -2,7 +2,8 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { PlaterDetailsComponent } from './player-details/player-details.component';
+import { RosterComponent } from './roster/roster.component';
+import { PlayerDetailsComponent } from './player-details/player-details.component';
 
 const appRoutes: Routes = [
   {
