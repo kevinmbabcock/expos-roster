@@ -21,4 +21,13 @@ export class PlayerService {
   getPlayerById(playerId: string) {
     return this.database.object('player/' + playerId);
   }
+
+  updatePlayer(localUpdatedPlayer) {
+    const playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+    playerEntryInFirebase.update({name: localUpdatedPlayer.name, age: parseInt(localUpdatedPlayer.age, 10), position: localUpdatedPlayer.position});
+  }
+
+  // deletePlayer(localPlayerToDelete) {
+  //   localPlayerToDelete.remove();
+  // }
 }
