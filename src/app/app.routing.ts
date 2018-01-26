@@ -22,10 +22,6 @@ const appRoutes: Routes = [
     component: RosterComponent
   },
   {
-    path: 'player-details',
-    component: PlayerDetailsComponent
-  },
-  {
     path: 'admin',
     component: AdminComponent
   },
@@ -38,7 +34,7 @@ const appRoutes: Routes = [
     component: PlayerDetailsComponent
   },
   {
-    path: 'admin/edit-player',
+    path: 'admin/edit-player/:id',
     component: EditPlayerComponent
   }
 ];

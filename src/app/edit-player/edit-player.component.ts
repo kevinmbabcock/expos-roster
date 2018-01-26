@@ -23,11 +23,16 @@ export class EditPlayerComponent implements OnInit {
     this.playerService.getPlayerById(this.playerId).subscribe(dataLastEmittedFromObserver => {
       this.playerToDisplay = dataLastEmittedFromObserver;
     });
-    console.log(this.playerToDisplay);
   }
 
   beginUpdatingPlayer(playerToUpdate) {
     this.playerService.updatePlayer(playerToUpdate);
+  }
+
+  beginDeletingPlayer(playerToDelete) {
+    if(confirm("Are you sure you want to delete this player from your roster?")){
+      this.playerService.deletePlayer(playerToDelete);
+    }
   }
 
 }

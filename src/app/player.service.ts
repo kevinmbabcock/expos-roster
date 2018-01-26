@@ -27,7 +27,7 @@ export class PlayerService {
     playerEntryInFirebase.update({name: localUpdatedPlayer.name, age: parseInt(localUpdatedPlayer.age, 10), position: localUpdatedPlayer.position});
   }
 
-  // deletePlayer(localPlayerToDelete) {
-  //   localPlayerToDelete.remove();
-  // }
+  deletePlayer(localPlayerToDelete) {
+    localPlayerToDelete.remove();
+  }
 }
