@@ -1,3 +1,27 @@
-<p>
-  add-player works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add new player to the team</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Player Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Player age:</label>
+        <br>
+        <input #newAge>
+      </div>
+
+      <div>
+        <label>Position</label>
+        <br>
+        <textarea #newPosition></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newAge.value, newPosition.value); newName.value=''; newAge.value=''; newPosition.value=''" routerLink=''>Add</button>
+    </div>
+  </div>
+</div>

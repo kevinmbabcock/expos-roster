@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { RosterComponent } from './roster/roster.component';
 import { PlayerDetailsComponent } from './player-details/player-details.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     AboutComponent,
     RosterComponent,
     PlayerDetailsComponent,
-    AddPlayerComponent
+    AddPlayerComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

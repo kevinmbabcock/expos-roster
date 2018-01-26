@@ -4,6 +4,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { RosterComponent } from './roster/roster.component';
 import { PlayerDetailsComponent } from './player-details/player-details.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +23,14 @@ const appRoutes: Routes = [
   {
     path: 'player-details',
     component: PlayerDetailsComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'admin/add-player',
+    component: AddPlayerComponent
   }
 ];
 
