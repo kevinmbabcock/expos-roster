@@ -1,3 +1,6 @@
-<p>
-  plater-details works!
-</p>
+<h3>Details for {{(playerToDisplay | async)?.name}}</h3>
+
+<ul>
+  <li>Age: {{(playerToDisplay | async)?.age}}</li>
+  <li>Position: {{(playerToDisplay | async)?.position}}</li>
+</ul>

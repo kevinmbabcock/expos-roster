@@ -31,6 +31,10 @@ const appRoutes: Routes = [
   {
     path: 'admin/add-player',
     component: AddPlayerComponent
+  },
+  {
+    path: 'player/:id',
+    component: PlayerDetailsComponent
   }
 ];
 
