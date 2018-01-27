@@ -3,7 +3,9 @@
   <br>
   <div *ngFor="let player of players | async" class="panel panel-default">
     <div class="panel-body">
-      <h6 (click)="goToDetailPage(player)"><em>{{player.name}}</em></h6>
+      <ul>
+        <li (click)="goToDetailPage(player)"><strong>{{player.name}}</strong> {{player.position}}</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -11,7 +13,9 @@
 <div *ngIf="currentRoute === '/admin'">
   <div *ngFor="let player of players | async" class="panel panel-default">
     <div class="panel-body">
-      <h6 (click)="goToEditPage(player)"><em>{{player.name}}</em></h6>
+      <ul>
+        <li (click)="goToEditPage(player)">{{player.name}}</li>
+      </ul>
     </div>
   </div>
 </div>

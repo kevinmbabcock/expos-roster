@@ -14,7 +14,7 @@ import { Player } from '../player.model';
 export class PlayerDetailsComponent implements OnInit {
   playerId: string;
   playerToDisplay;
-  playerToUpdate: Player;
+
 
   constructor(private route: ActivatedRoute, private location: Location, private playerService: PlayerService)
   { }
@@ -24,9 +24,7 @@ export class PlayerDetailsComponent implements OnInit {
       this.playerId = urlParameters['id'];
     });
     this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
-    this.playerService.getPlayerById(this.playerId).subscribe(dataLastEmittedFromObserver => {
-      this.playerToUpdate = dataLastEmittedFromObserver;
-    });
+
     console.log(this.playerToDisplay);
   }
 
