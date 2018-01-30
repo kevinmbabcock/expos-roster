@@ -1,5 +1,3 @@
 export class Player {
-
-  constructor (public name: string, public age: number, public position: string)
-  { }
+  constructor (public name: string, public age: number, public position: string) { }
 }

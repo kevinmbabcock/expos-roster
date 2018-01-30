@@ -10,16 +10,16 @@ export class PlayerService {
     this.players = database.list('players');
   }
 
+  getPlayerById(playerId: string) {
+    return this.database.object('players/' + playerId);
+  }
+
   getPlayers() {
     return this.players;
   }
 
   addPlayer(newPlayer: Player) {
     this.players.push(newPlayer);
-  }
-
-  getPlayerById(playerId: string) {
-    return this.database.object('player/' + playerId);
   }
 
   updatePlayer(localUpdatedPlayer) {
