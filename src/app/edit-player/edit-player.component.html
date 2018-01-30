@@ -5,14 +5,14 @@
 <br>
 
 <label>New Age:</label>
-<input [(ngModel)]="playerToDisplay.manager">
+<input [(ngModel)]="playerToDisplay.age">
 <br>
 
 <label>New Position:</label>
-<input [(ngModel)]="playerToDisplay.description">
+<input [(ngModel)]="playerToDisplay.position">
 <br>
 
 <button (click)="beginUpdatingPlayer(playerToDisplay)" routerLink='admin'>Update</button>
 <br>
 <br>
-<button (click) ="beginDeletingPlayer(playerToDisplay)" class="btn-danger">Delete Player</button>
+<button (click) ="beginDeletingPlayer(playerToDisplay)" class="btn-danger" routerLink='admin'>Delete Player</button>
