@@ -1,10 +1,28 @@
 # ExposRoster
 
+This application contains all the roster information for Los Expos baseball team in the Seattle NABA.
+
+By Kevin Babcock
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+## Description
+
+This website contains the following information for Los Expos:
+
+* A list of all players on the team roster
+* An about page that lists information and history of the team.
+* Each player can be clicked to show more details for that player.
+* Administrators can add, update, and delete all player entries.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Clone github repository from https://github.com/kevinmbabcock/expos-roster
+* Run `npm install` in root directory
+* Run `bower install`
+* Run `ng serve`, page will open in `localhost:4200`
+
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
